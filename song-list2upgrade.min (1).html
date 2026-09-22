@@ -1,0 +1,561 @@
+<!doctype html><html lang="ko" data-theme="light"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/><meta name="version" content="3.5.0"/><meta name="theme-color" content="#fff5f9"/><title>요모 노래방 책 · Song List</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet"/><link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"/><style>:root{--bg:#fff5f9;--ink:#4a1f3d;--ink-2:#7b4062;--muted:#7d4a6c;--pop:#ff2e88;--pop-2:#ff7ac0;--pop-text:#e3126f;--fill:linear-gradient(145deg,#ec1478,#d11266);--fill-135:linear-gradient(135deg,#ec1478,#d11266);--on-gold:#4a2c00;--gold:#f5a623;--surface:rgba(255,255,255,0.78);--surface-2:rgba(255,255,255,0.92);--solid:#ffffff;--line:rgba(255,110,175,0.22);--line-strong:rgba(255,110,175,0.45);--shadow-sm:0 2px 8px rgba(214,90,155,0.1);--shadow:0 10px 28px rgba(214,90,155,0.14);--shadow-lg:0 22px 50px rgba(196,60,130,0.22);--glow:0 8px 24px rgba(255,46,136,0.35);--r-sm:12px;--r:18px;--r-lg:26px;--head-h:210px}html[data-theme="dark"]{--bg:#150f1c;--ink:#f7eaf3;--ink-2:#dcbdd4;--muted:#c2a3bc;--pop:#ff62b0;--pop-2:#ffa0d4;--pop-text:#ff8ac6;--gold:#ffc75f;--surface:rgba(48,33,58,0.66);--surface-2:rgba(56,39,68,0.86);--solid:#241a30;--line:rgba(255,145,205,0.16);--line-strong:rgba(255,145,205,0.34);--shadow-sm:0 2px 8px rgba(0,0,0,0.35);--shadow:0 12px 30px rgba(0,0,0,0.45);--shadow-lg:0 24px 56px rgba(0,0,0,0.6);--glow:0 8px 26px rgba(255,98,176,0.4)}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}html{scroll-behavior:smooth}body{font-family:"Pretendard","Quicksand","Noto Sans KR",system-ui,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;padding-bottom:120px;overflow-x:hidden;transition:background-color 0.35s ease,color 0.35s ease}.topbar{position:sticky;top:0;z-index:100;background:var(--surface);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border-bottom:1px solid var(--line);box-shadow:var(--shadow);border-radius:0 0 var(--r-lg) var(--r-lg)}.topbar-inner{max-width:860px;margin:0 auto;padding:18px 20px 14px;display:flex;flex-direction:column;gap:13px;transition:padding 0.28s ease}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:44px;height:44px;flex:none;display:grid;place-items:center;font-size:1.35rem;border-radius:16px;background:var(--fill);box-shadow:var(--glow);transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1),width 0.28s ease,height 0.28s ease,font-size 0.28s ease}.brand-mark:hover{transform:rotate(-12deg) scale(1.08)}.brand-text{min-width:0;flex:1}.brand-text h1{font-size:1.6rem;font-weight:800;letter-spacing:-0.8px;line-height:1.15;background:linear-gradient(100deg,var(--pop),#b455ff 55%,var(--pop-2));-webkit-background-clip:text;background-clip:text;color:transparent;transition:font-size 0.28s ease}.brand-text p{font-size:0.8rem;font-weight:600;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.icon-btn{width:40px;height:40px;flex:none;border-radius:14px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);font-size:1.05rem;font-family:inherit;cursor:pointer;display:grid;place-items:center;transition:transform 0.18s ease,background 0.18s ease,color 0.18s ease,box-shadow 0.18s ease;box-shadow:var(--shadow-sm)}.icon-btn:hover{color:var(--pop-text);transform:translateY(-2px);box-shadow:var(--shadow)}.icon-btn:active{transform:scale(0.92)}.stats{display:flex;gap:7px;flex-wrap:wrap;overflow:hidden;transition:max-height 0.28s ease,opacity 0.22s ease,margin 0.28s ease;max-height:40px}.stat{display:inline-flex;align-items:baseline;gap:5px;padding:5px 12px;border-radius:50px;background:var(--surface-2);border:1px solid var(--line);font-size:0.76rem;font-weight:700;color:var(--muted);box-shadow:var(--shadow-sm)}.stat b{font-size:0.95rem;font-weight:800;color:var(--pop-text);font-variant-numeric:tabular-nums}.stat.star b{color:var(--gold)}.searchrow{display:flex;align-items:center;gap:8px}.searchbar{position:relative;display:flex;align-items:center;flex:1;min-width:0}.searchbar svg{position:absolute;left:16px;width:18px;height:18px;stroke:var(--muted);stroke-width:2.2;fill:none;pointer-events:none;transition:stroke 0.18s ease}#search{width:100%;height:48px;padding:0 46px 0 44px;border-radius:50px;border:1.5px solid var(--line);background:var(--surface-2);color:var(--ink);font-family:inherit;font-size:1rem;font-weight:600;outline:none;box-shadow:var(--shadow-sm);transition:border-color 0.18s ease,box-shadow 0.18s ease}#search::placeholder{color:var(--muted);opacity:1;font-weight:500}#search:focus{border-color:var(--pop);box-shadow:0 0 0 4px rgba(255,46,136,0.14)}.searchbar:focus-within svg{stroke:var(--pop)}#search-clear{position:absolute;right:8px;width:32px;height:32px;border:none;border-radius:50%;background:var(--line);color:var(--ink-2);font-size:0.85rem;font-family:inherit;cursor:pointer;display:none;place-items:center;transition:background 0.18s ease,transform 0.18s ease}#search-clear.show{display:grid}#search-clear:hover{background:var(--pop);color:#fff;transform:rotate(90deg)}.star-toggle{flex:none;height:48px;padding:0 16px;border-radius:16px;border:1.5px solid rgba(245,166,35,0.4);background:var(--surface-2);color:var(--ink-2);font-family:inherit;font-size:0.9rem;font-weight:800;white-space:nowrap;cursor:pointer;box-shadow:var(--shadow-sm);transition:transform 0.15s ease,background 0.18s ease,color 0.18s ease,border-color 0.18s ease,box-shadow 0.18s ease}.star-toggle:hover{transform:translateY(-2px);border-color:var(--gold);box-shadow:var(--shadow)}.star-toggle:active{transform:scale(0.96)}.star-toggle[aria-pressed="true"]{background:linear-gradient(135deg,#ffcf5f,var(--gold));border-color:transparent;color:var(--on-gold);box-shadow:0 6px 18px rgba(245,166,35,0.4)}.chip{flex:none;height:36px;padding:0 14px;border-radius:50px;border:1.5px solid var(--line);background:var(--surface-2);color:var(--ink-2);font-family:inherit;font-size:0.85rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;transition:transform 0.15s ease,background 0.18s ease,color 0.18s ease,border-color 0.18s ease,box-shadow 0.18s ease;box-shadow:var(--shadow-sm)}.chip:hover{transform:translateY(-2px);border-color:var(--line-strong);color:var(--pop-text)}.chip:active{transform:scale(0.95)}.chip .n{font-size:0.72rem;font-weight:700;opacity:0.6;font-variant-numeric:tabular-nums}.chip.active{background:var(--fill-135);border-color:transparent;color:#fff;box-shadow:0 3px 9px rgba(255,46,136,0.42)}.chip.active .n{opacity:0.85}.chip-scroll{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:10px 10px 14px;margin:-10px -10px -14px;scroll-snap-type:x proximity;-webkit-mask-image:linear-gradient(90deg,#000 0,#000 92%,transparent 100%);mask-image:linear-gradient(90deg,#000 0,#000 92%,transparent 100%)}.chip-scroll::-webkit-scrollbar{display:none}.chip-scroll .chip{scroll-snap-align:start}.topbar.compact .topbar-inner{padding-top:10px;padding-bottom:10px;gap:10px}.topbar.compact .stats{max-height:0;opacity:0;margin-top:-10px}.topbar.compact .brand-text h1{font-size:1.2rem}.topbar.compact .brand-text p{display:none}.topbar.compact .brand-mark{width:36px;height:36px;font-size:1.1rem}main{max-width:860px;margin:0 auto;padding:26px 20px 0}.section{margin-bottom:34px;scroll-margin-top:calc(var(--head-h) + 14px)}.letter-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}.letter{flex:none;min-width:46px;height:46px;padding:0 14px;display:grid;place-items:center;font-size:1.5rem;font-weight:800;letter-spacing:-0.5px;color:#fff;border-radius:16px;background:var(--fill);box-shadow:var(--glow)}.letter-rule{flex:1;height:1.5px;background:linear-gradient(90deg,var(--line-strong),transparent);border-radius:2px}.letter-count{flex:none;font-size:0.75rem;font-weight:700;color:var(--muted)}.artist-card{background:var(--surface);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:12px 12px 10px;margin-bottom:14px;transition:box-shadow 0.25s ease,transform 0.25s ease,border-color 0.25s ease}.artist-card:hover{box-shadow:var(--shadow-lg);border-color:var(--line-strong)}.artist-head{display:flex;align-items:center;gap:10px;padding:2px 12px 10px 13px}.artist-name{font-size:1.18rem;font-weight:800;color:var(--ink);letter-spacing:-0.3px;min-width:0;overflow-wrap:anywhere}.song{position:relative;display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--r);font-size:1rem;font-weight:600;color:var(--ink);border:1px solid transparent;transition:background 0.18s ease,transform 0.18s ease,border-color 0.18s ease,box-shadow 0.18s ease}.song + .song{margin-top:2px}.song::after{content:"";position:absolute;left:12px;right:12px;bottom:-1px;height:1px;background:var(--line);opacity:0.55}.song:last-child::after{display:none}.song:hover{background:var(--surface-2)}.song-idx{flex:none;width:20px;font-size:0.72rem;font-weight:700;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}.song-title{margin-right:auto;min-width:0;overflow-wrap:anywhere;line-height:1.35}.song-title .sub{color:var(--muted);font-size:0.85em;font-weight:500;margin-left:5px}.song-title mark{background:linear-gradient(180deg,transparent 55%,rgba(255,46,136,0.32) 55%);color:inherit;font-weight:800;border-radius:3px;padding:0 1px}.tag{flex:none;font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:50px;border:1px solid var(--line);color:var(--muted);background:var(--surface-2);white-space:nowrap}.badge{flex:none;font-size:0.7rem;font-weight:800;padding:4px 10px;border-radius:50px;white-space:nowrap;background-size:300% 100%;animation:shimmer 5s linear infinite}.badge-star{color:var(--on-gold);background-image:linear-gradient(110deg,#ffe9a8,#ffd166,#fff0c2,#ffcf5f,#ffe9a8);box-shadow:0 3px 10px rgba(245,166,35,0.4)}.badge-high{color:#3d1a6e;background-image:linear-gradient(110deg,#e6d6ff,#c9a3ff,#efe6ff,#c39bff,#e6d6ff);box-shadow:0 3px 10px rgba(180,85,255,0.35)}@keyframes shimmer{to{background-position:300% 0}}.skeleton-wrap{display:flex;flex-direction:column;gap:12px}.sk{height:62px;border-radius:var(--r-lg);background:linear-gradient( 100deg,var(--surface) 30%,var(--surface-2) 50%,var(--surface) 70% );background-size:300% 100%;border:1px solid var(--line);animation:shimmer 1.6s linear infinite}.sk:nth-child(2n){height:96px}.state{text-align:center;padding:56px 20px;color:var(--muted)}.state .emo{font-size:3rem;display:block;margin-bottom:12px;animation:float 3s ease-in-out infinite}@keyframes float{50%{transform:translateY(-8px)}}.state h3{font-size:1.1rem;font-weight:800;color:var(--ink);margin-bottom:6px}.state p{font-size:0.9rem;font-weight:600}.state button{margin-top:16px;height:42px;padding:0 22px;border:none;border-radius:50px;background:var(--fill-135);color:#fff;font-family:inherit;font-size:0.9rem;font-weight:800;cursor:pointer;box-shadow:var(--glow);transition:transform 0.18s ease}.state button:hover{transform:translateY(-2px) scale(1.03)}.alpha-nav{position:fixed;right:8px;top:calc(var(--head-h) + 12px);bottom:150px;z-index:90;display:flex;flex-direction:column;justify-content:center;gap:1px;background:var(--surface);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);padding:7px 5px;border-radius:50px;box-shadow:var(--shadow);height:fit-content;max-height:calc(100vh - var(--head-h) - 174px);margin:auto 0;overflow-y:auto;scrollbar-width:none;-ms-overflow-style:none}.alpha-nav::-webkit-scrollbar{display:none}.alpha-link{font-size:0.72rem;font-weight:800;color:var(--muted);background:none;border:none;font-family:inherit;cursor:pointer;width:24px;height:22px;flex:none;display:grid;place-items:center;border-radius:50%;transition:color 0.15s ease,background 0.15s ease,transform 0.15s ease}.alpha-link:hover{color:var(--pop-text);transform:scale(1.35)}.alpha-link.active{color:#fff;background:var(--fill);box-shadow:var(--glow)}.fab-stack{position:fixed;right:22px;bottom:24px;z-index:200;display:flex;flex-direction:column;align-items:center;gap:10px}.fab{width:62px;height:62px;border:none;border-radius:22px;background:var(--fill);color:#fff;font-size:1.7rem;font-family:inherit;cursor:pointer;display:grid;place-items:center;box-shadow:var(--glow),0 0 0 6px rgba(255,46,136,0.1);transition:transform 0.28s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.25s ease}.fab:hover{transform:translateY(-4px) rotate(-12deg) scale(1.06);box-shadow:var(--glow),0 0 0 10px rgba(255,46,136,0.14)}.fab:active{transform:scale(0.92)}.fab-top{width:42px;height:42px;border-radius:16px;font-size:1rem;background:var(--surface-2);color:var(--pop-text);border:1px solid var(--line);box-shadow:var(--shadow);opacity:0;pointer-events:none;transform:translateY(10px) scale(0.8)}.fab-top.show{opacity:1;pointer-events:auto;transform:none}.fab-top:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}#popup-backdrop{display:none;position:fixed;inset:0;background:rgba(30,8,25,0.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:999;align-items:center;justify-content:center;padding:20px}#popup-backdrop.open{display:flex;animation:fade-in 0.22s ease}@keyframes fade-in{from{opacity:0}}#popup-content{position:relative;width:100%;max-width:400px;padding:34px 24px 28px;border-radius:30px;text-align:center;background:var(--surface-2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--line-strong);box-shadow:var(--shadow-lg);animation:pop-in 0.32s cubic-bezier(0.34,1.56,0.64,1)}@keyframes pop-in{from{transform:scale(0.9) translateY(14px);opacity:0}}#popup-content::before{content:"";position:absolute;inset:-1px;border-radius:31px;padding:1.5px;background:linear-gradient(135deg,var(--pop-2),#b455ff,var(--pop));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}#popup-close-btn{position:absolute;top:14px;right:14px;width:34px;height:34px;border:1px solid var(--line);border-radius:50%;background:var(--surface);color:var(--ink-2);font-size:0.9rem;font-family:inherit;cursor:pointer;transition:transform 0.2s ease,background 0.2s ease,color 0.2s ease}#popup-close-btn:hover{background:var(--pop);color:#fff;transform:rotate(90deg)}.popup-title{font-size:0.78rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:14px}#roulette-container{height:84px;overflow:hidden;border-radius:var(--r);border:1.5px dashed var(--line-strong);background:var(--surface);position:relative}#roulette-container::before,#roulette-container::after{content:"";position:absolute;left:0;right:0;height:22px;z-index:2;pointer-events:none}#roulette-container::before{top:0;background:linear-gradient(var(--solid),transparent)}#roulette-container::after{bottom:0;background:linear-gradient(transparent,var(--solid))}.roulette-item{height:84px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:3px;padding:0 12px}.roulette-item .a{color:var(--pop-text);font-size:0.9rem;font-weight:800}.roulette-item .t{color:var(--ink);font-size:1.1rem;font-weight:700}.result-artist{font-size:1rem;font-weight:800;color:var(--pop-text);margin-bottom:6px}.result-track{font-size:1.5rem;font-weight:800;color:var(--ink);letter-spacing:-0.5px;line-height:1.3;overflow-wrap:anywhere;padding-bottom:4px}@media (max-width:720px){main{padding:20px 14px 0;padding-right:44px}.topbar-inner{padding:14px 16px 12px;gap:11px}.brand-text h1{font-size:1.35rem}.artist-card{padding:10px 8px 8px;border-radius:var(--r-lg)}.song{padding:10px;gap:8px}.artist-head{padding-left:11px}.fab-stack{right:14px;bottom:18px}.alpha-nav{bottom:136px;max-height:calc(100vh - var(--head-h) - 160px)}}@media (max-width:940px){main{padding-right:46px}}@media (max-width:480px){.brand-text p{font-size:0.74rem}.stat{font-size:0.7rem;padding:4px 10px}.star-toggle{font-size:0.82rem;padding:0 12px}.letter{min-width:40px;height:40px;font-size:1.25rem}.song{font-size:0.95rem;flex-wrap:wrap}.song-idx{width:16px;font-size:0.66rem}.tag{display:none}.fab{width:56px;height:56px;font-size:1.5rem}.alpha-nav{gap:0}.alpha-link{width:22px;height:20px;font-size:0.68rem}}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}}</style></head><body><header class="topbar" id="topbar"><div class="topbar-inner"><div class="brand"><div class="brand-mark" aria-hidden="true">🌸</div><div class="brand-text"><h1>Song List</h1><p>요모의 노래방 책 🎤</p></div><button id="theme-toggle" class="icon-btn" title="다크 모드 전환" aria-label="다크 모드 전환"> 🌙 </button></div><div class="stats" id="stats"></div><div class="searchrow"><div class="searchbar"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6" stroke-linecap="round"/></svg><input type="text" id="search" placeholder="노래 또는 가수 검색..." autocomplete="off" spellcheck="false"/><button id="search-clear" type="button" aria-label="검색어 지우기">✕</button></div><button id="recommend-toggle" class="star-toggle" type="button" aria-pressed="false"> ⭐ 추천곡 </button></div><div class="chip-scroll" id="genre-chips"></div></div></header><main id="karaoke-book"></main><nav id="alpha-nav" class="alpha-nav" aria-label="글자 인덱스"></nav><div class="fab-stack"><button id="scroll-top" class="fab fab-top" type="button" aria-label="맨 위로">▲</button><button id="random-song" class="fab" type="button" aria-label="랜덤 노래 뽑기">🎲</button></div><div id="popup-backdrop"><div id="popup-content"></div></div><script>const SHEET_CSV_URL =
+"https://docs.google.com/spreadsheets/d/e/2PACX-1vSI_tRPXggLNbTJ9yO9PhWB05zzCWzCSjn6RdX6sR6ndXMpsvgU7sJnGnbL4w70-g/pub?gid=905413231&single=true&output=csv";
+const genreCategory = {
+ballad: "발라드",
+jpop: "일본",
+pop: "팝",
+dance: "댄스",
+romantic: "로맨틱",
+indie: "인디",
+"r&b": "R&B",
+acoustic: "어쿠스틱",
+rock: "록",
+};
+(function initTheme() {
+const saved = localStorage.getItem("songlist-theme");
+document.documentElement.setAttribute("data-theme", saved === "dark" ? "dark" : "light");
+document.addEventListener("DOMContentLoaded", () => {
+const btn = document.getElementById("theme-toggle");
+const paint = () => {
+const t = document.documentElement.getAttribute("data-theme");
+btn.textContent = t === "dark" ? "☀️" : "🌙";
+document
+.querySelector('meta[name="theme-color"]')
+.setAttribute("content", t === "dark" ? "#150f1c" : "#fff5f9");
+};
+paint();
+btn.addEventListener("click", () => {
+const next =
+document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+document.documentElement.setAttribute("data-theme", next);
+localStorage.setItem("songlist-theme", next);
+paint();
+});
+});
+})();
+function parseCSV(text) {
+const lines = text.trim().split("\n");
+if (lines.length < 2) return [];
+const headers = lines[0]
+.split(",")
+.map((h) => h.trim().toLowerCase().replace(/\r/g, ""));
+const rows = [];
+for (let i = 1; i < lines.length; i++) {
+const cols = [];
+let cur = "",
+inQ = false;
+for (let c = 0; c < lines[i].length; c++) {
+const ch = lines[i][c];
+if (ch === '"') {
+inQ = !inQ;
+} else if (ch === "," && !inQ) {
+cols.push(cur.trim());
+cur = "";
+} else {
+cur += ch;
+}
+}
+cols.push(cur.trim().replace(/\r/g, ""));
+const row = {};
+headers.forEach((h, idx) => {
+row[h] = cols[idx] || "";
+});
+rows.push(row);
+}
+return rows;
+}
+function getKoreanLetter(name) {
+const code = name.charCodeAt(0);
+if (code >= 0xac00 && code <= 0xd7a3) {
+const leads = [
+"ㄱ",
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄷ",
+"ㄹ",
+"ㅁ",
+"ㅂ",
+"ㅂ",
+"ㅅ",
+"ㅅ",
+"ㅇ",
+"ㅈ",
+"ㅈ",
+"ㅊ",
+"ㅋ",
+"ㅌ",
+"ㅍ",
+"ㅎ",
+];
+return leads[Math.floor((code - 0xac00) / 588)];
+}
+const upper = name[0].toUpperCase();
+if (/[A-Z]/.test(upper)) return upper;
+return "#";
+}
+function buildSongList(rows) {
+const valid = rows.filter(
+(r) =>
+r.published &&
+r.published.toLowerCase() === "yes" &&
+r.artist &&
+r.artist.trim() !== "" &&
+r.track &&
+r.track.trim() !== "",
+);
+valid.forEach((r) => {
+const g = r.genre ? r.genre.trim().toLowerCase() : "";
+if (g && !genreCategory[g]) {
+genreCategory[g] = g.charAt(0).toUpperCase() + g.slice(1);
+}
+});
+const letterMap = {};
+valid.forEach((r) => {
+const artist = r.artist.trim();
+const letter = getKoreanLetter(artist);
+if (!letterMap[letter]) letterMap[letter] = {};
+if (!letterMap[letter][artist]) letterMap[letter][artist] = [];
+const isYes = (v) => !!v && v.trim().toLowerCase() === "yes";
+letterMap[letter][artist].push({
+track: r.track.trim(),
+genre: r.genre ? r.genre.trim().toLowerCase() : "",
+recommended: isYes(r.recommended),
+highNote: isYes(r["고음"]),
+});
+});
+const koreanOrder = [
+"ㄱ",
+"ㄴ",
+"ㄷ",
+"ㄹ",
+"ㅁ",
+"ㅂ",
+"ㅅ",
+"ㅇ",
+"ㅈ",
+"ㅊ",
+"ㅋ",
+"ㅌ",
+"ㅍ",
+"ㅎ",
+];
+const letters = Object.keys(letterMap).sort((a, b) => {
+const ai = koreanOrder.indexOf(a),
+bi = koreanOrder.indexOf(b);
+if (ai !== -1 && bi !== -1) return ai - bi;
+if (ai !== -1) return -1;
+if (bi !== -1) return 1;
+if (a === "#") return 1;
+if (b === "#") return -1;
+return a.localeCompare(b);
+});
+return letters.map((letter) => ({
+letter,
+artists: Object.entries(letterMap[letter])
+.sort((a, b) => a[0].localeCompare(b[0], "ko"))
+.map(([name, songs]) => ({ name, songs })),
+}));
+}
+const $ = (sel) => document.querySelector(sel);
+function esc(s) {
+return String(s)
+.replace(/&/g, "&amp;")
+.replace(/</g, "&lt;")
+.replace(/>/g, "&gt;")
+.replace(/"/g, "&quot;");
+}
+function markUp(text, q) {
+if (!q) return esc(text);
+const lower = text.toLowerCase();
+let out = "",
+i = 0;
+while (i < text.length) {
+const hit = lower.indexOf(q, i);
+if (hit === -1) {
+out += esc(text.slice(i));
+break;
+}
+out += esc(text.slice(i, hit));
+out += "<mark>" + esc(text.slice(hit, hit + q.length)) + "</mark>";
+i = hit + q.length;
+}
+return out;
+}
+function watchHeaderHeight() {
+const bar = $("#topbar");
+const apply = () =>
+document.documentElement.style.setProperty("--head-h", bar.offsetHeight + "px");
+apply();
+if (window.ResizeObserver) new ResizeObserver(apply).observe(bar);
+window.addEventListener("resize", apply);
+window.addEventListener("load", apply);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(apply);
+}
+let songList = [];
+async function loadSongs() {
+const container = $("#karaoke-book");
+container.innerHTML =
+'<div class="skeleton-wrap">' +
+'<div class="sk"></div><div class="sk"></div><div class="sk"></div>' +
+'<div class="sk"></div><div class="sk"></div>' +
+"</div>";
+try {
+const res = await fetch(SHEET_CSV_URL);
+if (!res.ok) throw new Error("Fetch failed");
+const text = await res.text();
+const rows = parseCSV(text);
+songList = buildSongList(rows);
+initApp();
+} catch (e) {
+container.innerHTML = `<div class="state">
+<span class="emo">🎧</span>
+<h3>노래 목록을 불러오지 못했어요</h3>
+<p>인터넷 연결을 확인하고 다시 시도해 주세요.</p>
+<button type="button" onclick="location.reload()">다시 불러오기</button>
+</div>`;
+console.error("Failed to load songs:", e);
+}
+}
+function initApp() {
+const container = $("#karaoke-book");
+const searchInput = $("#search");
+const searchClear = $("#search-clear");
+const genreChips = $("#genre-chips");
+const recommendToggle = $("#recommend-toggle");
+const alphaNav = $("#alpha-nav");
+const statsBox = $("#stats");
+let showRecommendedOnly = false;
+let currentGenre = "";
+let sectionObserver = null;
+watchHeaderHeight();
+const allSongsFlat = songList.flatMap((s) =>
+s.artists.flatMap((a) => a.songs.map((song) => ({ artist: a.name, ...song }))),
+);
+const artistCount = new Set(allSongsFlat.map((s) => s.artist)).size;
+const starCount = allSongsFlat.filter((s) => s.recommended).length;
+statsBox.innerHTML =
+`<span class="stat"><b>${allSongsFlat.length}</b> 곡</span>` +
+`<span class="stat"><b>${artistCount}</b> 아티스트</span>` +
+`<span class="stat star"><b>${starCount}</b> 추천</span>`;
+const genreCounts = {};
+allSongsFlat.forEach((s) => {
+if (s.genre) genreCounts[s.genre] = (genreCounts[s.genre] || 0) + 1;
+});
+const genreEntries = Object.entries(genreCategory)
+.filter(([key]) => genreCounts[key])
+.sort((a, b) => {
+const isAKorean = /[가-힣]/.test(a[1]);
+const isBKorean = /[가-힣]/.test(b[1]);
+if (isAKorean && !isBKorean) return -1;
+if (!isAKorean && isBKorean) return 1;
+return a[1].localeCompare(b[1], isAKorean ? "ko" : "en");
+});
+genreChips.innerHTML =
+`<button class="chip active" type="button" data-genre="">전체</button>` +
+genreEntries
+.map(
+([key, label]) =>
+`<button class="chip" type="button" data-genre="${esc(key)}">${esc(label)}<span class="n">${genreCounts[key]}</span></button>`,
+)
+.join("");
+genreChips.addEventListener("click", (e) => {
+const chip = e.target.closest(".chip");
+if (!chip) return;
+const toggledOff = chip.dataset.genre !== "" && chip.dataset.genre === currentGenre;
+currentGenre = toggledOff ? "" : chip.dataset.genre;
+const target = toggledOff ? genreChips.querySelector('.chip[data-genre=""]') : chip;
+genreChips.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
+target.classList.add("active");
+if (!toggledOff) {
+chip.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+}
+render(filterSongs());
+});
+function renderAlphaNav(filteredList) {
+alphaNav.innerHTML = "";
+if (!filteredList || filteredList.length === 0) {
+alphaNav.style.display = "none";
+return;
+}
+alphaNav.style.display = "flex";
+filteredList.forEach((section) => {
+const link = document.createElement("button");
+link.className = "alpha-link";
+link.type = "button";
+link.dataset.letter = section.letter;
+link.textContent = section.letter;
+link.addEventListener("click", () => {
+const target = container.querySelector(
+`.section[data-letter="${CSS.escape(section.letter)}"]`,
+);
+if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+alphaNav.appendChild(link);
+});
+}
+function observeSections() {
+if (sectionObserver) sectionObserver.disconnect();
+const headH = parseInt(
+getComputedStyle(document.documentElement).getPropertyValue("--head-h"),
+10,
+) || 200;
+sectionObserver = new IntersectionObserver(
+(entries) => {
+entries.forEach((entry) => {
+if (!entry.isIntersecting) return;
+const letter = entry.target.dataset.letter;
+alphaNav.querySelectorAll(".alpha-link").forEach((l) => {
+l.classList.toggle("active", l.dataset.letter === letter);
+});
+if (alphaNav.scrollHeight > alphaNav.clientHeight) {
+const active = alphaNav.querySelector(".alpha-link.active");
+if (active) active.scrollIntoView({ block: "nearest" });
+}
+});
+},
+{ rootMargin: `-${headH + 10}px 0px -70% 0px`, threshold: 0 },
+);
+container.querySelectorAll(".section").forEach((s) => sectionObserver.observe(s));
+}
+function render(filteredList) {
+const q = searchInput.value.trim().toLowerCase();
+container.innerHTML = "";
+renderAlphaNav(filteredList);
+if (filteredList.length === 0) {
+container.innerHTML = `<div class="state">
+<span class="emo">🔎</span>
+<h3>검색 결과가 없어요</h3>
+<p>다른 검색어나 장르로 찾아볼까요?</p>
+<button type="button" id="reset-filters">필터 초기화</button>
+</div>`;
+$("#reset-filters").addEventListener("click", resetFilters);
+return;
+}
+const frag = document.createDocumentFragment();
+filteredList.forEach((section) => {
+const sectionDiv = document.createElement("div");
+sectionDiv.className = "section";
+sectionDiv.dataset.letter = section.letter;
+const songTotal = section.artists.reduce((n, a) => n + a.songs.length, 0);
+const head = document.createElement("div");
+head.className = "letter-row";
+head.innerHTML =
+`<div class="letter">${esc(section.letter)}</div>` +
+`<div class="letter-rule"></div>` +
+`<div class="letter-count">${songTotal}곡</div>`;
+sectionDiv.appendChild(head);
+section.artists.forEach((artist) => {
+const card = document.createElement("div");
+card.className = "artist-card";
+const aHead = document.createElement("div");
+aHead.className = "artist-head";
+aHead.innerHTML = `<div class="artist-name">${markUp(artist.name, q)}</div>`;
+card.appendChild(aHead);
+artist.songs.forEach((song, i) => {
+const row = document.createElement("div");
+row.className = "song";
+const match = song.track.match(/^(.*?)(\(|（)(.*?)(\)|）)$/);
+let titleHtml;
+if (match && match[3].trim() !== "=I") {
+titleHtml =
+markUp(match[1].trim(), q) +
+`<span class="sub">(${markUp(match[3].trim(), q)})</span>`;
+} else {
+titleHtml = markUp(song.track, q);
+}
+const genreLabel = song.genre ? genreCategory[song.genre] || song.genre : "";
+row.innerHTML =
+`<span class="song-idx">${i + 1}</span>` +
+`<span class="song-title">${titleHtml}</span>` +
+(song.recommended ? `<span class="badge badge-star">⭐ 추천</span>` : "") +
+(song.highNote ? `<span class="badge badge-high">🎵 고음</span>` : "") +
+(genreLabel ? `<span class="tag">${esc(genreLabel)}</span>` : "");
+card.appendChild(row);
+});
+sectionDiv.appendChild(card);
+});
+frag.appendChild(sectionDiv);
+});
+container.appendChild(frag);
+observeSections();
+}
+function filterSongs() {
+const query = searchInput.value;
+const genre = currentGenre;
+const hasQuery = query && query.trim() !== "";
+const hasGenre = genre && genre.trim() !== "";
+const lowerQuery = hasQuery ? query.trim().toLowerCase() : null;
+return songList
+.map((section) => {
+const filteredArtists = section.artists
+.map((artist) => {
+let filteredSongs = artist.songs;
+if (hasGenre) {
+filteredSongs = filteredSongs.filter((song) => song.genre === genre);
+}
+if (hasQuery) {
+const artistMatches = artist.name.toLowerCase().includes(lowerQuery);
+if (!artistMatches) {
+filteredSongs = filteredSongs.filter((song) =>
+song.track.toLowerCase().includes(lowerQuery),
+);
+}
+}
+if (showRecommendedOnly) {
+filteredSongs = filteredSongs.filter((song) => song.recommended === true);
+}
+if (filteredSongs.length > 0) {
+return { ...artist, songs: filteredSongs };
+}
+return null;
+})
+.filter(Boolean);
+if (filteredArtists.length > 0) {
+return { ...section, artists: filteredArtists };
+}
+return null;
+})
+.filter(Boolean);
+}
+function resetFilters() {
+searchInput.value = "";
+searchClear.classList.remove("show");
+currentGenre = "";
+showRecommendedOnly = false;
+recommendToggle.setAttribute("aria-pressed", "false");
+genreChips.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
+const all = genreChips.querySelector('.chip[data-genre=""]');
+if (all) all.classList.add("active");
+render(filterSongs());
+}
+searchInput.addEventListener("input", function () {
+searchClear.classList.toggle("show", this.value !== "");
+render(filterSongs());
+});
+searchInput.addEventListener("keydown", (e) => {
+if (e.key === "Escape") {
+searchInput.value = "";
+searchClear.classList.remove("show");
+render(filterSongs());
+}
+});
+searchClear.addEventListener("click", () => {
+searchInput.value = "";
+searchClear.classList.remove("show");
+searchInput.focus();
+render(filterSongs());
+});
+recommendToggle.addEventListener("click", function () {
+showRecommendedOnly = !showRecommendedOnly;
+this.setAttribute("aria-pressed", String(showRecommendedOnly));
+render(filterSongs());
+});
+render(songList);
+const topbar = $("#topbar");
+const scrollTopBtn = $("#scroll-top");
+let ticking = false;
+let compact = false;
+const COMPACT_ON = 120;
+const COMPACT_OFF = 40;
+window.addEventListener(
+"scroll",
+() => {
+if (ticking) return;
+ticking = true;
+requestAnimationFrame(() => {
+const y = window.scrollY;
+if (!compact && y > COMPACT_ON) {
+compact = true;
+topbar.classList.add("compact");
+} else if (compact && y < COMPACT_OFF) {
+compact = false;
+topbar.classList.remove("compact");
+}
+scrollTopBtn.classList.toggle("show", y > 400);
+ticking = false;
+});
+},
+{ passive: true },
+);
+scrollTopBtn.addEventListener("click", () =>
+window.scrollTo({ top: 0, behavior: "smooth" }),
+);
+const popupBackdrop = $("#popup-backdrop");
+const popupContent = $("#popup-content");
+function closePopup() {
+popupBackdrop.classList.remove("open");
+}
+popupBackdrop.addEventListener("click", (e) => {
+if (e.target === popupBackdrop) closePopup();
+});
+document.addEventListener("keydown", (e) => {
+if (e.key === "Escape") closePopup();
+});
+function pickPool() {
+const view = filterSongs();
+const pool = view.flatMap((section) =>
+section.artists.flatMap((artist) =>
+artist.songs.map((song) => ({ artist: artist.name, track: song.track })),
+),
+);
+return pool.length ? pool : allSongsFlat.map((s) => ({ artist: s.artist, track: s.track }));
+}
+function showResult(finalSong) {
+popupContent.innerHTML = `
+<button id="popup-close-btn" type="button" aria-label="닫기">✖</button>
+<div class="popup-title">✨ 오늘의 랜덤 곡 ✨</div>
+<div class="result-artist">${esc(finalSong.artist)}</div>
+<div class="result-track">${esc(finalSong.track)}</div>`;
+$("#popup-close-btn").addEventListener("click", closePopup);
+}
+function spin() {
+const allSongs = pickPool();
+const rouletteItems = [];
+for (let i = 0; i < 10; i++) {
+rouletteItems.push(allSongs[Math.floor(Math.random() * allSongs.length)]);
+}
+const finalSong = allSongs[Math.floor(Math.random() * allSongs.length)];
+rouletteItems.push(finalSong);
+const rouletteList = rouletteItems
+.map(
+(song) => `<div class="roulette-item">
+<span class="a">${esc(song.artist)}</span>
+<span class="t">${esc(song.track)}</span>
+</div>`,
+)
+.join("");
+popupBackdrop.classList.add("open");
+popupContent.innerHTML = `
+<button id="popup-close-btn" type="button" aria-label="닫기">✖</button>
+<div class="popup-title">🎲 뽑는 중...</div>
+<div id="roulette-container"><div class="roulette-list">${rouletteList}</div></div>`;
+$("#popup-close-btn").addEventListener("click", closePopup);
+const listElem = popupContent.querySelector(".roulette-list");
+const itemHeight = 84;
+const distance = itemHeight * (rouletteItems.length - 1);
+const DURATION = 2300;
+const t0 = performance.now();
+listElem.style.transform = "translateY(0px)";
+void listElem.offsetHeight;
+const finish = () => {
+listElem.style.transform = `translateY(-${distance}px)`;
+setTimeout(() => {
+if (popupBackdrop.classList.contains("open")) showResult(finalSong);
+}, 420);
+};
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+finish();
+return;
+}
+(function frame(now) {
+const t = Math.min(1, (now - t0) / DURATION);
+const eased = 1 - Math.pow(1 - t, 3.4);
+listElem.style.transform = `translateY(-${distance * eased}px)`;
+if (t < 1) requestAnimationFrame(frame);
+else finish();
+})(t0);
+}
+$("#random-song").addEventListener("click", spin);
+}
+loadSongs();</script></body></html>
